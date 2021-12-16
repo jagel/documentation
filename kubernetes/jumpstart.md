@@ -55,4 +55,4 @@ Kubernetes is an open source container orchestration engine for automating deplo
 4. Go to the following url and paste the token 
 `` http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/. ``
 
-More details about Kubernetes UI Dashboard in the following [Link](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) and execute the command to deploy the dashboard UI 
+More details about Kubernetes UI Dashboard click in the following [Link](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) and execute the command to deploy the dashboard UI 

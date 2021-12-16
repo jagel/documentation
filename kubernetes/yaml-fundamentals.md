@@ -1,8 +1,8 @@
 # YAML Fundamental
 
-- Oiriginally named YAML because it stands fors Yet Another Markup Language, but nowadays it's called YAML ain't markup language
+- Oiriginally named YAML because it stands for: Yet Another Markup Language, but nowadays it's called YAML ain't markup language
 - Text file compose of maps and lists
-- Identation matter to e consistent
+- Identation matter to be consistent
 - Always use spaces
 
 ## Maps: 
@@ -75,5 +75,3 @@ kubectl delete pod [name-of-pod]
 #Delete Pod using YAML file that created it
 kubectl delete -f file.pod.yml
 ```
-
-#Example
