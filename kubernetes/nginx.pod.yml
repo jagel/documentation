@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod     
+metadata:
+  name: my-nginx         
+  labels:
+   app: nginx
+   rel: stable
+spec:
+ containers:
+ - name: my-nginx
+   image: mginx:alpine
+   ports:
+   - containerPort: 80
+   resources:
+
+#kubectl create -f nginx.pod.yml
+#kubectl describe pod [pod-name]
+#kubectl apply -f nginx.pod.yml
+#kubectl exec [pod-name] -it sh
+#kubectl edit -f nginx.pod.yml
+#kubectl delete -f nginx.pod.yml
