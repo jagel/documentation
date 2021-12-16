@@ -4,5 +4,6 @@
    - 1.3 [Pod Health](kubernetes/pod-health.md)
    - 1.4 [Deployment](kubernetes/deployment.md)
    - 1.5 [Networking and services](kubernetes/services.md)
+   - 1.6 [Storage](kubernetes/storage.md)
 
    - [Kubernetes keywords](kubernetes/keywords.md)
