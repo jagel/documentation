@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:      
+  postgresdb:
+    image: postgres:10 #load version 10 to keep in sync with serverless version
+    container_name: postgres
+    restart: always
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./init-database.sh:/docker-entrypoint-initdb.d/init-database.sh
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: localpassword
+    ports:
+      - 5432:5432
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  postgres:
+
+networks:
+  default:
+    external:
+      name: nat

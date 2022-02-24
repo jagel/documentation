@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:      
+  mssqldb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: msql
+    restart: always
+    environment:
+      SA_PASSWORD: localpassword_1
+      ACCEPT_EULA: Y
+    ports:
+      - 1433:1433
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+networks:
+  default:
+    external:
+      name: nat
