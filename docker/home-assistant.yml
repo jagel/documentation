@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:      
+  homeassistant:
+    image: homeassistant/home-assistant:stable
+    container_name: home_assitant
+    restart: always
+    network_mode: host
+    privileged: true
+
+networks: 
+  default:
+    external:
+      name: nat
