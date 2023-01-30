@@ -1,12 +1,14 @@
-version: '3.4'
-
-services:      
+version: '3.8'
+services:
   homeassistant:
-    image: homeassistant/home-assistant:stable
-    container_name: home_assitant
-    restart: always
-    network_mode: host
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:2023.2.0b4"
+    volumes:
+      - /home/jagel/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
     privileged: true
+    network_mode: host
 
 networks: 
   default:
